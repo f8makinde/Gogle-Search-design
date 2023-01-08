@@ -6,31 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search design</title>
     <script src="https://kit.fontawesome.com/70204d8c46.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body>
+    <div class="container mx-8 my-10">
 <header>
     <nav>
-        <ul>
-            <li><a href="#"><img src="images\googlelogo_color_92x30dp.png" alt=""></a></li>
-            <li><input type="text"></li>
+        <ul class="flex space-x-8">
+            <li><a href="#"><img src="images\googlelogo_color_92x30dp.png" alt="" class="w-24 mt-2"></a></li>
+            <li><input type="text" placeholder="lionel messi" class="outline-none placeholder:text-black placeholder:left-0 bg-white shadow-lg py-3 px-48 rounded-[50px]"></li>
         </ul>
    </nav>
-      <div>
-        <ul>
-            <li class="list"><i class="fa-sharp fa-solid fa-magnifying-glass"></i><a href="">All</a></li>
-            <li class="list"><i class="fa-regular fa-newspaper"></i><a href="">News</a></li>
-            <li class="list"><i class="fa-regular fa-image"></i><a href="">Images</a></li>
-            <li class="list"><i class="fa-brands fa-square-youtube"></i><a href="">Videos</a></li>
-            <li class="list"><i class="fa-solid fa-ellipsis-vertical"></i><a href="">More</a></li>
+    <div class="flex mt-8">
+      <div class="">
+        <ul class="flex gap-8">
+            <li class="list space-x-2 text-blue-500 text-[15px] border-b-4 border-blue-600"><i class="text-[15px] fa-sharp fa-solid fa-magnifying-glass"></i><a href="">All</a></li>
+            <li class="list space-x-2 text-slate-600 text-[15px]"><i class="text-[15px] fa-regular fa-newspaper"></i><a href="">News</a></li>
+            <li class="list space-x-2 text-slate-600 text-[15px]"><i class="text-[15px] fa-regular fa-image"></i><a href="">Images</a></li>
+            <li class="list space-x-2 text-slate-600 text-[15px]"><i class="text-[15px] fa-brands fa-square-youtube"></i><a href="">Videos</a></li>
+            <li class="list space-x-2 text-slate-600 text-[15px]"><i class="fa-solid fa-ellipsis-vertical"></i><a href="">More</a></li>
         </ul>
-        <ul>
+        <ul class="justify-end">
             <li class="list">
                 <a href="">Tools</a>
             </li>
         </ul>
 
-        </div>
-        <div>
+        </div>justify-end
+        <div class="flex ">
             <ul class="list"><a href="">SafeSearch on</a></ul>
+        </div>
         </div>
 </header>
    <main>
@@ -44,7 +49,10 @@
     <ul><a href="" class="btn-link">Overview</a><a href="" class="btn-link">News</a><a href="" class="btn-link">Stats</a><a href="" class="btn-link">Videos</a></ul>
    </section>
    <section>
-    
+      <div class="grid">
+          <img src="download.jpg" alt="" class="w-12 rounded-lg">
+      </div>
    </section>
+</div>
 </body>
 </html>
